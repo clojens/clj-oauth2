@@ -1,13 +1,13 @@
 (def dev-dependencies
-  '[[ring "0.3.11"]])
+  '[[ring "1.2.1"]])
 
 (defproject clj-oauth2 "0.3.0"
   :description "clj-http and ring middlewares for OAuth 2.0"
   :dependencies [[org.clojure/clojure "1.3.0"]
-                 [org.clojure/data.json "0.1.1"]
-                 [clj-http "0.3.2"]
+                 [org.clojure/data.json "0.2.3"]
+                 [clj-http "0.7.8"]
                  [uri "1.1.0"]
-                 [commons-codec/commons-codec "1.6"]]
+                 [commons-codec/commons-codec "1.8"]]
   :exclusions   [org.clojure/clojure-contrib]
   :dev-dependencies ~dev-dependencies
   :profiles {:dev {:dependencies ~dev-dependencies}}
